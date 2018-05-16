@@ -56,10 +56,9 @@ class Customer {
   }
 
   totalSpent() {
-    var addToTotal = function (agg, el) {
+    this.meals().reduce(function (agg, el) {
       return agg + el.price
-    }
-    this.meals().reduce(addToTotal, 0)
+    }, 0)
   }
 }
 
