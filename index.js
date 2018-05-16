@@ -59,7 +59,7 @@ class Customer {
     var addToTotal = function (agg, el) {
       return agg + el.price
     }
-    this.meals().reduce(addToTotal(), 0)
+    this.meals().reduce(addToTotal, 0)
   }
 }
 
