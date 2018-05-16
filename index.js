@@ -56,7 +56,7 @@ class Customer {
   }
 
   totalSpent() {
-    const addToTotal = function (agg, el, i, arr) {
+    const addToTotal = function (agg, el) {
       return agg + el.price
     }
     this.meals().reduce(addToTotal, 0)
