@@ -25,12 +25,12 @@ class Neighborhood {
   }
 
   meals() {
-    let mealsreturn = []
+    let mealsReturn = []
     this.deliveries().forEach(delivery => {
       if (!mealsreturn.includes(delivery.meal())){
         mealsreturn.push(delivery.meal())}
     })
-    return mealsreturn
+    return mealsReturn
   }
 }
 
